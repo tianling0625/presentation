@@ -1,0 +1,27 @@
+---
+title: "Assignment"
+author: "Tianyu Wang"
+date: "1/1/2018"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(plotly)
+library(datasets)
+```
+
+## Introduction
+
+###This is a presentation showing the dataset "cars".
+###It shows the ralationship of Speed and Stopping Distances of Cars.
+
+## Slide with Plot
+
+```{r}
+plot_ly(data = cars, x = ~speed, y = ~dist, type = "scatter", mode = "markers")
+```
+
+## Happy new year!
